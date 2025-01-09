@@ -9,13 +9,13 @@ import java.util.List;
 
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javafx.scene.chart.XYChart;
+
 
 public class Fileimport {
 
-    private FileChooser fileChooser;
+    private static FileChooser fileChooser;
 
-    public void FileImporter() {
+    public Fileimport() {
         fileChooser = new FileChooser();
         fileChooser.setTitle("Select CSV");
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.csv"));
@@ -25,30 +25,48 @@ public class Fileimport {
         return fileChooser.showOpenDialog(stage);
     }
 
-    public String[] readCSV(File file, List<XYChart.Data<Number, Number>> dataPoints) throws IOException {
-        String[] axisTitles = new String[]{"X-Axis", "Y-Axis"}; // Default axis titles
+    public List<MeleeWeapon> readCSV(File file) throws IOException {
+        List<MeleeWeapon> weapons = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
+            boolean isFirstLine = true;
 
-            // Read the first row for axis titles
-            if ((line = reader.readLine()) != null) {
-                axisTitles = line.split(",");
-            }
-
-            // Read the remaining rows for data points
+            // Skip header row
             while ((line = reader.readLine()) != null) {
+                if (isFirstLine) {
+                    isFirstLine = false;
+                    continue;
+                }
+
                 String[] parts = line.split(",");
-                if (parts.length >= 2) {
+                if (parts.length >= 14) { // Ensure all columns are present
                     try {
-                        double x = Double.parseDouble(parts[0]);
-                        double y = Double.parseDouble(parts[1]);
-                        dataPoints.add(new XYChart.Data<>(x, y));
+                        String name = parts[0];
+                        String attackName = parts[1];
+                        double impact = Double.parseDouble(parts[2]);
+                        double puncture = Double.parseDouble(parts[3]);
+                        double slash = Double.parseDouble(parts[4]);
+                        double baseDamage = Double.parseDouble(parts[5]);
+                        double totalDamage = Double.parseDouble(parts[6]);
+                        double critChance = Double.parseDouble(parts[7]);
+                        double critMultiplier = Double.parseDouble(parts[8]);
+                        double statusChance = Double.parseDouble(parts[9]);
+                        double speed = Double.parseDouble(parts[10]);
+                        int mastery = Integer.parseInt(parts[11]);
+                        String introducedDate = parts[12];
+                        String weaponClass = parts[13];
+
+                        // Create a new MeleeWeapon object
+                        MeleeWeapon weapon = new MeleeWeapon(name, attackName, impact, puncture, slash, baseDamage,
+                                                             totalDamage, critChance, critMultiplier, statusChance,
+                                                             speed, mastery, introducedDate, weaponClass);
+                        weapons.add(weapon);
                     } catch (NumberFormatException ex) {
                         System.err.println("Skipping invalid row: " + line);
                     }
                 }
             }
         }
-        return axisTitles;
+        return weapons;
     }
 }
