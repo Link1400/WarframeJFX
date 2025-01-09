@@ -1,0 +1,289 @@
+Name,AttackName,Impact,Puncture,Slash,BaseDamage,TotalDamage,CritChance,CritMultiplier,StatusChance,Speed,Mastery,IntroducedDate,Class
+Dakra Prime,Normal Attack,17,17,136,170,170,0.36,2.4,0.18,1,10,2013-09-13,Sword
+Gunsen,Normal Attack,12.8,19.2,128,160,160,0.16,2,0.28,1.17,8,2017-10-12,Warfan
+Endura,Normal Attack,10,140,50,200,200,0.1,2,0.36,0.917,7,2017-05-24,Rapier
+Karyst,Normal Attack,30,84,72,273,273,0.1,2,0.26,0.75,6,2014-08-13,Dagger
+Mios,Normal Attack,53.1,44.25,79.65,177,177,0.19,2,0.25,1.08,8,2015-11-12,Blade and Whip
+Destreza Prime,Normal Attack,20.4,119,30.6,170,170,0.32,3,0.2,0.917,10,2018-06-19,Rapier
+Nami Skyla Prime,Normal Attack,18,36,126,180,180,0.22,2,0.34,1.33,11,2017-08-29,Dual Swords
+Redeemer,Normal Attack,18,36,126,180,180,0.1,1.8,0.22,0.833,4,2014-11-27,Gunblade
+Redeemer,Ranged Attack,0,0,0,30,300,0.1,1.8,0.066,2.5,4,2014-11-27,Gunblade
+Garuda Prime Talons,Normal Attack,14,28,238,280,280,0.35,2,0.36,1,0,2022-03-28,Exalted Weapon
+MK1-Bo,Normal Attack,81,9,0,90,90,0.1,2,0.1,1,0,2014-07-18,Staff
+Scindo,Normal Attack,20,20,160,200,200,0.15,1.5,0.1,0.917,2,2013-01-14,Heavy Blade
+Prova Vandal,Normal Attack,80,0,0,198,198,0.14,2,0.32,1,8,2013-10-23,Machete
+Tekko Prime,Normal Attack,39.6,25.2,115.2,180,180,0.3,2.4,0.26,1,12,2019-10-01,Fist
+Kogake Prime,Normal Attack,169.4,36.3,36.3,242,242,0.16,1.8,0.38,0.917,10,2017-12-12,Sparring
+Nikana,Normal Attack,7.1,14.2,120.7,142,142,0.16,2,0.16,0.917,4,2014-04-09,Nikana
+Dragon Nikana,Normal Attack,9.4,18.8,159.8,188,188,0.22,2,0.22,1,8,2014-04-09,Nikana
+Sancti Magistar,Normal Attack,192,36,12,240,240,0.3,2,0.2,1,8,2016-09-15,Hammer
+Atterax,Normal Attack,6.45,6.45,116.1,129,129,0.25,3,0.2,0.917,5,2014-09-17,Whip
+Prisma Skana,Normal Attack,25.5,25.5,119,170,170,0.28,2.2,0.16,1,8,2015-05-28,Sword
+Dual Ichor,Normal Attack,19,11,45,122,122,0.25,3,0.15,1.08,6,2013-09-13,Dual Swords
+Quassus,Normal Attack,27.6,46,156.4,230,230,0.3,2,0.12,0.833,8,2020-08-25,Warfan
+Quassus,First Heavy Attack - Ethereal Daggers,0,76,114,190,2280,0.3,2,0.02,2,8,2020-08-25,Warfan
+Quassus,Second Heavy Attack - Ethereal Daggers,0,152,228,380,2280,0.3,2,0.035,2,8,2020-08-25,Warfan
+Korrudo,Normal Attack,110.01,5.79,77.2,193,193,0.31,2.5,0.09,0.833,9,2019-04-04,Sparring
+Dual Keres,Normal Attack,13.8,34.5,66.7,115,115,0.28,2.6,0.14,1.25,7,2018-04-20,Dual Swords
+Tenet Livia,Normal Attack,9.9,9.9,178.2,198,316.8,0.28,2.2,0.28,1.08,14,2021-07-06,Two-Handed Nikana
+Nepheri,Normal Attack,21,63,85,261,261,0.21,2.3,0.33,1,13,2021-12-15,Dual Daggers
+Kronen Prime,Normal Attack,21.2,21.2,169.6,212,212,0.22,2,0.34,1.17,13,2018-03-20,Tonfa
+Ack & Brunt,Normal Attack,14.9,14.9,119.2,149,149,0.2,2,0.1,0.833,3,2015-07-31,Sword and Shield
+Amphis,Normal Attack,91,19.5,19.5,130,130,0.13,1.7,0.21,1.25,5,2013-02-22,Staff
+Dual Skana,Normal Attack,18,18,84,120,120,0.05,1.5,0.16,0.833,0,2012-10-25,Dual Swords
+Nami Solo,Normal Attack,25.8,25.8,120.4,172,172,0.15,2,0.25,1,6,2014-05-28,Machete
+Stropha,Normal Attack,61.6,74.8,83.6,220,220,0.3,2.4,0.14,1,10,2020-06-11,Gunblade
+Stropha,Ranged Attack,700,0,0,700,700,0.3,2.4,0.14,2.5,10,2020-06-11,Gunblade
+Prisma Obex,Normal Attack,105,22.5,22.5,150,150,0.25,2,0.3,1.33,10,2017-05-05,Sparring
+Diwata,Normal Attack,30,150,20,200,200,0.2,2,0.1,1.08,0,2018-06-15,Exalted Weapon
+Venato,Normal Attack,33,110,77,220,220,0.27,2.1,0.24,1.08,9,2021-12-15,Scythe
+Ankyros,Normal Attack,63,13.5,13.5,90,90,0.2,2,0.1,1.17,2,2013-04-19,Fist
+Guandao Prime,Normal Attack,60,12,168,240,240,0.32,2.4,0.2,1,12,2020-10-27,Polearm
+Lacera,Normal Attack,12,38,66,216,216,0.05,2,0.45,0.917,7,2015-12-03,Blade and Whip
+Furax,Normal Attack,94.5,20.3,20.2,135,135,0.25,2.3,0.11,1,5,2012-10-25,Fist
+Skana,Normal Attack,18,18,84,120,120,0.05,1.5,0.16,0.833,0,2012-10-25,Sword
+Ankyros Prime,Normal Attack,89.6,19.2,19.2,128,128,0.28,2.4,0.16,1.25,8,2014-03-05,Fist
+Silva & Aegis Prime,Normal Attack,0,0,0,318,318,0.25,2,0.3,0.75,12,2017-05-30,Sword and Shield
+Sheev,Normal Attack,13.5,13.5,243,270,270,0.13,2.1,0.25,0.667,5,2014-09-17,Dagger
+Serro,Normal Attack,0,0,96,234,234,0.08,1.5,0.26,0.917,6,2014-05-21,Polearm
+Dual Kamas Prime,Normal Attack,8,32,120,160,160,0.2,2,0.25,1.17,8,2015-10-06,Dual Swords
+Ceramic Dagger,Normal Attack,14,126,0,140,140,0.1,1.5,0.2,1,3,2012-12-18,Dagger
+Cadus,Normal Attack,70,0,0,130,130,0.15,2,0.25,1,4,2021-07-06,Staff
+Skana Prime,Normal Attack,31.5,31.5,147,210,210,0.26,2.6,0.26,1,12,2012-12-18,Sword
+Heat Dagger,Normal Attack,14,76,56,208,208,0.14,1.6,0.14,0.75,3,2012-12-18,Dagger
+Gazal Machete,Normal Attack,17.8,26.7,133.5,178,178,0.1,2,0.3,1,5,2016-10-05,Machete
+Galatine Prime,Normal Attack,7,7,266,280,280,0.26,2,0.26,1,13,2016-08-23,Heavy Blade
+Ether Daggers,Normal Attack,33.6,33.6,156.8,224,224,0.1,1.8,0.3,0.833,6,2013-04-12,Dual Daggers
+Dex Dakra,Normal Attack,14.2,14.2,113.6,142,142,0.16,2,0.24,0.883,6,2015-03-25,Dual Swords
+Dark Sword,Normal Attack,0,120,60,260,260,0.05,1.5,0.4,0.833,8,2012-12-18,Sword
+Ripkas,Normal Attack,8.65,17.3,147.05,173,173,0.2,2,0.15,0.883,5,2015-03-19,Claws
+Broken Scepter,Normal Attack,125.3,17.9,35.8,179,179,0.1,2,0.3,1.25,7,2016-11-11,Staff
+Orthos Prime,Normal Attack,35.1,35.1,163.8,234,234,0.24,2.2,0.36,1.17,12,2013-07-13,Polearm
+Prisma Dual Cleavers,Normal Attack,13.3,13.3,106.4,133,133,0.25,3,0.25,1,9,2015-07-10,Dual Swords
+Kreska,Normal Attack,30,15,45,190,190,0.14,2,0.22,0.917,6,2018-11-08,Machete
+Jat Kittag,Normal Attack,160,30,10,200,200,0.15,2,0.25,1,5,2014-02-05,Hammer
+Twin Basolk,Normal Attack,55,15,55,210,210,0.05,2,0.4,1,7,2015-10-21,Dual Swords
+Shadow Claws,Normal Attack,75,50,125,250,250,0.38,2.6,0.24,1,0,2021-04-13,Exalted Weapon
+Cobra & Crane,Normal Attack,207.2,88.8,0,296,296,0.15,1.5,0.36,0.917,10,2018-12-18,Sword and Shield
+Verdilac,Normal Attack,21.3,85.2,106.5,213,213,0.3,2.5,0.21,1,13,2021-12-15,Whip
+Verdilac,Energy Wave,0,0,0,213,213,0.3,2.5,0.21,1,13,2021-12-15,Whip
+Vitrica,Normal Attack,99.9,99.9,133.2,333,333,0.23,2.3,0.33,0.833,13,2020-10-27,Heavy Blade
+Vitrica,Glass Explosion,299.7,299.7,399.6,999,999,0.23,2.3,0.33,0.833,13,2020-10-27,Heavy Blade
+Zenistar,Normal Attack,80,0,68,298,298,0.1,2,0.3,0.833,6,2016-07-28,Heavy Blade
+Zenistar,Attacks While Disc Deployed,13,13,104,130,130,0.1,2,0.15,0.833,6,2016-07-28,Heavy Blade
+Zenistar,Disc Impact,75,0,0,75,75,0.1,2,0.15,0.909,6,2016-07-28,Heavy Blade
+Zenistar,Disc Explosion,0,0,0,350,350,0,1,0.15,0.909,6,2016-07-28,Heavy Blade
+Zenistar,Disc Aura,0,0,0,50,50,0,1,0.5,1.2,6,2016-07-28,Heavy Blade
+Valkyr Talons,Normal Attack,83.3,83.3,83.3,249.9,249.9,0.5,2,0.1,1.5,0,2018-06-15,Exalted Weapon
+Fang Prime,Normal Attack,26.7,124.6,26.7,178,178,0.26,2.6,0.26,1,10,2013-07-13,Dual Daggers
+Wolf Sledge,Normal Attack,132.1,7.8,119.1,259,259,0.17,1.9,0.33,1,7,2019-02-27,Hammer
+Wolf Sledge,Throw,396.3,23.4,357.3,777,777,0.17,1.9,0.33,0.833,7,2019-02-27,Hammer
+Wolf Sledge,Recall Explosion,0,0,0,777,777,0.17,1.9,0.33,0.833,7,2019-02-27,Hammer
+Krohkur,Normal Attack,26,39.1,151.9,217,217,0.29,2.3,0.19,0.833,9,2017-10-12,Sword
+War,Normal Attack,120,60,70,250,250,0.26,2.6,0.26,0.917,10,2015-12-03,Heavy Blade
+Tipedo,Normal Attack,12.4,12.4,99.2,124,124,0.2,2,0.2,1.33,3,2015-01-08,Staff
+Lesion,Normal Attack,47.4,11.85,177.75,237,237,0.15,2,0.37,1,9,2016-03-04,Polearm
+Volnus Prime,Normal Attack,55,80,115,250,250,0.2,1.8,0.34,1.2,14,2021-05-25,Hammer
+Arum Spinosa,Normal Attack,35.64,59.4,201.96,297,297,0.09,1.9,0.37,1.08,11,2020-11-19,Warfan
+Arum Spinosa,First Heavy Attack - Toxic Spines,17.5,28,57.75,175,3150,0.09,1.9,0.12,2,11,2020-11-19,Warfan
+Arum Spinosa,Second Heavy Attack - Toxic Spines,35,56,115.5,350,3150,0.09,1.9,0.12,2,11,2020-11-19,Warfan
+Volnus,Normal Attack,48.4,70.4,101.2,220,220,0.18,1.6,0.3,1.2,9,2017-10-12,Hammer
+Shaku,Normal Attack,180,0,0,180,180,0.18,2,0.34,1.17,10,2015-12-16,Nunchaku
+Venka,Normal Attack,7,35,98,140,140,0.15,2,0.15,1,4,2014-06-25,Claws
+Gram,Normal Attack,24,24,112,160,160,0.15,2,0.15,0.95,2,2013-02-08,Heavy Blade
+Vaykor Sydon,Normal Attack,10.65,202.35,0,213,213,0.21,2.5,0.33,1.08,11,2016-09-15,Polearm
+Orthos,Normal Attack,27.75,27.75,129.5,185,185,0.06,1.5,0.18,0.917,2,2013-06-07,Polearm
+Vastilok,Normal Attack,19.53,25.11,234.36,279,279,0.19,1.7,0.31,1,9,2021-07-17,Gunblade
+Vastilok,Ranged Attack,8.97,10.35,49.68,69,621,0.19,1.7,0.1033,2.5,9,2021-07-17,Gunblade
+Jaw Sword,Normal Attack,6,24,90,120,120,0.08,1.5,0.16,0.917,0,2012-12-18,Sword
+Kestrel,Normal Attack,58.8,12.6,12.6,84,84,0.1,2,0.1,1.08,0,2013-06-07,Glaive
+Kestrel,Throw,73.6,9.2,9.2,92,92,0.12,2.1,0.12,1.08,0,2013-06-07,Glaive
+Kestrel,Throw Bounce Explosion,0,0,0,126,126,0.12,2.1,0.12,1.08,0,2013-06-07,Glaive
+Kestrel,Throw Recall Explosion,0,0,0,252,252,0.12,2.1,0.12,1.08,0,2013-06-07,Glaive
+Kestrel,Charged Throw,147.2,18.4,18.4,184,184,0.14,2.2,0.14,0.833,0,2013-06-07,Glaive
+Kestrel,Charged Throw Bounce Explosion,0,0,0,252,252,0.14,2.2,0.14,0.833,0,2013-06-07,Glaive
+Kestrel,Charged Throw Recall Explosion,0,0,0,504,504,0.14,2.2,0.14,0.833,0,2013-06-07,Glaive
+Bo Prime,Normal Attack,158.4,17.6,0,176,176,0.24,2.6,0.32,1.08,5,2014-06-11,Staff
+Heliocor,Normal Attack,238,28,14,280,280,0.38,2,0.12,0.833,9,2016-07-28,Hammer
+Dark Split-Sword (Heavy Blade),Normal Attack,0,78,52,230,230,0.15,2,0.25,0.917,5,2016-06-08,Heavy Blade
+Masseter,Normal Attack,134.96,0,106.04,241,241,0.24,2,0.28,1,8,2019-10-31,Heavy Blade
+Fragor Prime,Normal Attack,189,40.5,40.5,270,270,0.4,2.5,0.18,0.8,12,2016-05-17,Hammer
+Karyst Prime,Normal Attack,50,96,102,344,344,0.24,2.2,0.3,0.667,12,2020-07-14,Dagger
+Reaper Prime,Normal Attack,30,30,140,200,200,0.35,2.5,0.25,1.08,10,2013-05-23,Scythe
+Valkyr Prime Talons,Normal Attack,83.3,83.3,83.3,249.9,249.9,0.5,2,0.1,1.5,0,2018-06-15,Exalted Weapon
+Xoris,Normal Attack,24,40.8,55.2,120,120,0.2,2.4,0.18,1.17,4,2020-06-11,Glaive
+Xoris,Throw,24,40.8,55.2,120,120,0.2,2.4,0.18,1.17,4,2020-06-11,Glaive
+Xoris,Throw Bounce Explosion,0,0,0,250,250,0.2,2.4,0.18,1.17,4,2020-06-11,Glaive
+Xoris,Throw Recall Explosion,0,0,0,500,500,0.2,2.4,0.18,1.17,4,2020-06-11,Glaive
+Xoris,Charged Throw,48,81.6,110.4,240,240,0.22,2.4,0.2,0.833,4,2020-06-11,Glaive
+Xoris,Charged Throw Bounce Explosion,0,0,0,500,500,0.22,2.4,0.2,0.833,4,2020-06-11,Glaive
+Xoris,Charged Throw Recall Explosion,0,0,0,1000,1000,0.22,2.4,0.2,0.833,4,2020-06-11,Glaive
+Twin Krohkur,Normal Attack,30,45,175,250,250,0.19,1.7,0.33,0.917,10,2017-10-12,Dual Swords
+Tonbo,Normal Attack,18.4,27.6,138,184,184,0.05,2,0.25,1,3,2015-02-18,Polearm
+Tenet Grigori,Normal Attack,9.1,82.1,136.8,228,364.8,0.24,1.6,0.38,1.08,14,2021-07-06,Scythe
+Tenet Grigori,Energy Disk,1360,1360,1360,4080,6528,0.24,1.6,0.38,1,14,2021-07-06,Scythe
+Glaive Prime,Normal Attack,24.6,24.6,114.8,164,164,0.22,2,0.3,1.25,10,2013-11-20,Glaive
+Glaive Prime,Throw,27,27,126,180,180,0.24,2.2,0.32,1.25,10,2013-11-20,Glaive
+Glaive Prime,Throw Bounce Explosion,0,0,0,296,296,0.24,2.2,0.32,1.25,10,2013-11-20,Glaive
+Glaive Prime,Throw Recall Explosion,0,0,0,592,592,0.24,2.2,0.32,1.25,10,2013-11-20,Glaive
+Glaive Prime,Charged Throw,54,54,252,360,360,0.26,2.4,0.34,0.833,10,2013-11-20,Glaive
+Glaive Prime,Charged Throw Bounce Explosion,0,0,0,592,592,0.26,2.4,0.34,0.833,10,2013-11-20,Glaive
+Glaive Prime,Charged Throw Recall Explosion,0,0,0,1184,1184,0.26,2.4,0.34,0.833,10,2013-11-20,Glaive
+Bo,Normal Attack,126,14,0,140,140,0.125,2,0.2,1,4,2012-10-25,Staff
+Cronus,Normal Attack,31.8,15.9,58.3,106,106,0.06,1.5,0.18,0.917,0,2012-10-25,Sword
+Ninkondi Prime,Normal Attack,66,28,50,234,234,0.22,2.4,0.36,1,14,2019-07-06,Nunchaku
+Furax Wraith,Normal Attack,97.3,20.9,20.8,139,139,0.3,2.7,0.15,1.08,9,2016-04-29,Fist
+Anku,Normal Attack,25.5,136,8.5,170,170,0.2,2,0.1,1.08,3,2015-06-04,Scythe
+Tipedo Prime,Normal Attack,17,17,136,170,170,0.24,2.4,0.24,1.17,10,2019-04-02,Staff
+Ceti Lacera,Normal Attack,12,38,66,216,216,0.2,2,0.4,1.08,12,2020-03-24,Blade and Whip
+Tenet Exec,Normal Attack,102.6,0,87.4,190,304,0.38,2.4,0.22,1,16,2021-07-06,Heavy Blade
+Tenet Exec,Normal Shockwave,190,0,0,190,304,0.38,2.4,0.22,1,16,2021-07-06,Heavy Blade
+Tenet Exec,Heavy Shockwave,950,0,0,950,1520,0.38,2.4,0.22,1,16,2021-07-06,Heavy Blade
+Tenet Agendus,Normal Attack,120,0,0,260,416,0.24,2,0.28,0.917,14,2021-07-06,Sword and Shield
+Tenet Agendus,Energy Disk,0,0,0,2880,4608,0.24,2,0.28,1,14,2021-07-06,Sword and Shield
+Dark Split-Sword (Dual Swords),Normal Attack,0,56,28,116,116,0.25,2.5,0.15,1.17,5,2016-06-08,Dual Swords
+Telos Boltace,Normal Attack,21,178.5,10.5,210,210,0.2,2,0.35,1.08,11,2016-09-15,Tonfa
+Telos Boltace,Stormpath Slide Attack,42,357,21,420,420,0.2,2,0.35,1.08,11,2016-09-15,Tonfa
+Obex,Normal Attack,84,18,18,120,120,0.25,2,0.1,1,4,2013-11-06,Sparring
+Pangolin Prime,Normal Attack,12.4,37.2,198.4,248,248,0.26,2.2,0.3,0.917,14,2020-03-31,Sword
+Tatsu,Normal Attack,20,54,68,214,214,0.16,2,0.28,1,7,2019-03-08,Two-Handed Nikana
+Gram Prime,Normal Attack,60,15,225,300,300,0.32,2.6,0.32,0.8,14,2018-09-25,Heavy Blade
+Synoid Heliocor,Normal Attack,238,28,14,280,280,0.16,2,0.4,1.08,11,2016-09-15,Hammer
+Sydon,Normal Attack,11.25,213.75,0,225,225,0.1,2,0.25,0.917,5,2016-01-05,Polearm
+Caustacyst,Normal Attack,17,71,69,260,260,0.09,2,0.37,1,7,2016-10-20,Scythe
+Caustacyst,Corrosive Wave,0,0,0,192,192,0.09,2,0.1,1,7,2016-10-20,Scythe
+Caustacyst,Corrosive Pool,0,0,0,5,5,0,1,0,1,7,2016-10-20,Scythe
+Glaive,Normal Attack,15.75,15.75,73.5,105,105,0.12,2,0.12,1,1,2013-04-26,Glaive
+Glaive,Throw,17.4,17.4,81.2,116,116,0.14,2.1,0.14,1,1,2013-04-26,Glaive
+Glaive,Throw Bounce Explosion,0,0,0,190,190,0.14,2.1,0.14,1,1,2013-04-26,Glaive
+Glaive,Throw Recall Explosion,0,0,0,380,380,0.14,2.1,0.14,1,1,2013-04-26,Glaive
+Glaive,Charged Throw,34.65,34.65,161.7,231,231,0.16,2.2,0.16,0.833,1,2013-04-26,Glaive
+Glaive,Charged Throw Bounce Explosion,0,0,0,378,378,0.16,2.2,0.16,0.833,1,2013-04-26,Glaive
+Glaive,Charged Throw Recall Explosion,0,0,0,756,756,0.16,2.2,0.16,0.833,1,2013-04-26,Glaive
+Skiajati,Normal Attack,26.25,12.25,136.5,175,175,0.19,2.1,0.3,1.17,11,2018-06-15,Nikana
+Fang,Normal Attack,16.2,75.6,16.2,108,108,0.08,1.5,0.16,0.917,0,2013-03-18,Dual Daggers
+Silva & Aegis,Normal Attack,0,0,0,98,98,0.05,1.5,0.2,1,0,2014-07-18,Sword and Shield
+Sigma & Octantis,Normal Attack,38.28,27.84,107.88,174,174,0.28,2.2,0.16,1.08,10,2017-10-30,Sword and Shield
+Diwata Prime,Normal Attack,30,150,20,200,200,0.2,2,0.1,1.08,0,2020-03-31,Exalted Weapon
+Nikana Prime,Normal Attack,9.9,9.9,178.2,198,198,0.28,2.4,0.28,1.08,12,2016-02-16,Nikana
+Dual Kamas,Normal Attack,4.8,9.6,81.6,96,96,0.1,1.5,0.15,1.17,1,2013-11-27,Dual Swords
+Kama,Normal Attack,13.5,13.5,63,90,90,0.12,1.8,0.1,1.17,1,2013-09-13,Machete
+Sibear,Normal Attack,70,20,50,270,270,0.15,2,0.3,1,6,2016-04-06,Hammer
+Ether Reaper,Normal Attack,27,27,126,180,180,0.2,2,0.2,1.08,4,2013-09-13,Scythe
+Venka Prime,Normal Attack,9.4,37.6,141,188,188,0.32,2.6,0.24,1.05,14,2016-11-22,Claws
+Kesheg,Normal Attack,96.4,24.1,120.5,241,241,0.19,2.5,0.23,0.833,7,2016-11-11,Polearm
+MK1-Furax,Normal Attack,63,13.5,13.5,90,90,0.2,2,0.1,1,0,2014-07-18,Fist
+Garuda Talons,Normal Attack,19.84,54.56,173.6,248,248,0.2,2,0.36,1,0,2018-11-08,Exalted Weapon
+Scoliac,Normal Attack,22.5,22.5,105,150,150,0.13,1.5,0.29,1.25,6,2013-12-19,Whip
+Scindo Prime,Normal Attack,25,25,200,250,250,0.26,2.4,0.24,0.967,8,2014-09-24,Heavy Blade
+Rakta Dark Dagger,Normal Attack,0,88,62,246,246,0.12,1.8,0.3,1,8,2016-09-15,Dagger
+Prisma Machete,Normal Attack,28.95,28.95,135.1,193,193,0.15,1.9,0.31,0.917,7,2021-06-10,Machete
+Kogake,Normal Attack,84,18,18,120,120,0.2,2,0.1,0.917,2,2013-06-28,Sparring
+Dual Cleavers,Normal Attack,23.55,23.55,109.9,157,157,0.25,3,0.1,0.833,5,2013-05-23,Dual Swords
+Rumblejack,Normal Attack,120,0,0,300,300,0.13,1.8,0.4,0.67,8,2021-12-15,Dagger
+Heat Sword,Normal Attack,14.7,14.7,117.6,147,147,0.05,1.5,0.2,0.917,3,2012-12-18,Sword
+Halikar Wraith,Normal Attack,22.5,180,22.5,225,225,0.19,2.3,0.35,1.17,13,2021-04-05,Glaive
+Halikar Wraith,Throw,87.7,87.7,87.7,263.1,263.1,0.21,2.3,0.39,1.17,13,2021-04-05,Glaive
+Halikar Wraith,Throw Bounce Explosion,0,0,0,329,329,0.21,2.3,0.39,1.17,13,2021-04-05,Glaive
+Halikar Wraith,Throw Recall Explosion,0,0,0,658,658,0.21,2.3,0.39,1.17,13,2021-04-05,Glaive
+Halikar Wraith,Charged Throw,52.7,421.6,22.7,497,497,0.21,2.5,0.41,0.833,13,2021-04-05,Glaive
+Halikar Wraith,Charged Throw Bounce Explosion,0,0,0,657,657,0.21,2.5,0.41,0.833,13,2021-04-05,Glaive
+Halikar Wraith,Charged Throw Recall Explosion,0,0,0,1314,1314,0.21,2.5,0.41,0.833,13,2021-04-05,Glaive
+Redeemer Prime,Normal Attack,21.2,42.4,148.4,212,212,0.24,2.2,0.3,0.917,10,2018-12-18,Gunblade
+Redeemer Prime,Ranged Attack,0,0,0,80,800,0.24,2.2,0.09,2.5,10,2018-12-18,Gunblade
+Fragor,Normal Attack,140,30,30,200,200,0.2,2,0.1,0.833,2,2013-01-14,Hammer
+Pupacyst,Normal Attack,139,0,0,284,284,0.13,1.5,0.27,0.833,7,2018-10-12,Polearm
+Pulmonars,Normal Attack,193,0,0,290,290,0.19,2.3,0.33,0.917,11,2020-11-19,Nunchaku
+Prova,Normal Attack,52,0,0,128,128,0.14,2,0.16,1,3,2013-05-23,Machete
+Sarpa,Normal Attack,16,32,112,160,160,0.14,2,0.28,1,8,2016-08-19,Gunblade
+Sarpa,Ranged Attack,3.5,10.5,21,35,35,0.14,2,0.28,3.33,8,2016-08-19,Gunblade
+Lecta,Normal Attack,0,20,25,101,101,0.05,1.5,0.25,1,0,2013-11-20,Whip
+Ghoulsaw,Normal Attack,37.43,45.31,114.26,197,197,0.15,1.9,0.27,1,7,2021-09-08,Assault Saw
+Desert Wind,Normal Attack,250,0,0,250,250,0.5,2,0.15,1,0,2018-12-18,Exalted Weapon
+Pennant,Normal Attack,20,140,40,200,200,0.32,2.4,0.1,0.917,7,2019-12-13,Two-Handed Nikana
+Pathocyst,Normal Attack,57,55,61,262,262,0.15,2.1,0.3,0.667,9,2019-09-26,Glaive
+Pathocyst,Throw,49,43,78,288,288,0.17,2.3,0.33,0.667,9,2019-09-26,Glaive
+Pathocyst,Throw Bounce Explosion,0,0,0,393,393,0.17,2.3,0.33,0.667,9,2019-09-26,Glaive
+Pathocyst,Throw Recall Explosion,0,0,0,786,786,0.17,2.3,0.33,0.667,9,2019-09-26,Glaive
+Pathocyst,Charged Throw,127,121,135,576,576,0.21,2.5,0.35,0.833,9,2019-09-26,Glaive
+Pathocyst,Charged Throw Bounce Explosion,0,0,0,786,786,0.21,2.5,0.35,0.833,9,2019-09-26,Glaive
+Pathocyst,Charged Throw Recall Explosion,0,0,0,1572,1572,0.21,2.5,0.35,0.833,9,2019-09-26,Glaive
+Machete Wraith,Normal Attack,31.65,31.65,147.7,211,211,0.19,2.1,0.33,1.08,11,2013-10-23,Machete
+Paracesis,Normal Attack,48.8,17.8,155.4,222,222,0.31,2.6,0.22,0.917,10,2018-10-12,Heavy Blade
+Pangolin Sword,Normal Attack,7.5,22.5,120,150,150,0.08,1.5,0.22,0.917,3,2012-12-18,Sword
+Boltace,Normal Attack,17.6,140.8,17.6,176,176,0.06,1.5,0.28,0.917,4,2015-05-12,Tonfa
+Hirudo,Normal Attack,19.5,104,6.5,130,130,0.3,3,0.11,1,7,2016-12-22,Sparring
+Orvius,Normal Attack,39,9.75,146.25,195,195,0.18,2,0.18,0.75,5,2016-11-11,Glaive
+Orvius,Throw,43,10.75,161.25,215,215,0.2,2.2,0.2,0.75,5,2016-11-11,Glaive
+Orvius,Throw Bounce Explosion,0,0,0,293,293,0.2,2.2,0.2,0.75,5,2016-11-11,Glaive
+Orvius,Throw Recall Explosion,0,0,0,586,586,0.2,2.2,0.2,0.75,5,2016-11-11,Glaive
+Orvius,Charged Throw,85.75,21.5,321.75,429,429,0.22,2.4,0.22,0.833,5,2016-11-11,Glaive
+Orvius,Charged Throw Bounce Explosion,0,0,0,585,585,0.22,2.4,0.22,0.833,5,2016-11-11,Glaive
+Orvius,Charged Throw Recall Explosion,0,0,0,1170,1170,0.22,2.4,0.22,0.833,5,2016-11-11,Glaive
+Orvius,Hover Attack,0,0,0,75,75,0.2,2.2,0.6,0.75,5,2016-11-11,Glaive
+Okina,Normal Attack,7,63,70,140,140,0.16,2,0.2,1.08,5,2016-07-08,Dual Daggers
+Dual Zoren,Normal Attack,3.5,3.5,63,70,70,0.25,3,0.05,1.17,2,2013-01-29,Dual Swords
+Ohma,Normal Attack,76,0,38,224,224,0.15,2,0.3,0.917,8,2017-01-18,Tonfa
+Tekko,Normal Attack,32,16,112,160,160,0.3,2,0.1,0.917,6,2015-10-01,Fist
+Exalted Blade,Normal Attack,37.5,37.5,175,250,250,0.15,2,0.15,0.833,0,2018-06-15,Exalted Weapon
+Ninkondi,Normal Attack,90,0,0,190,190,0.1,2,0.35,1,8,2015-09-09,Nunchaku
+Destreza,Normal Attack,3.95,134.3,19.75,158,158,0.28,2,0.14,1,7,2016-01-13,Rapier
+Nami Skyla,Normal Attack,18.75,18.75,87.5,125,125,0.1,1.5,0.15,0.917,2,2014-04-09,Dual Swords
+Mire,Normal Attack,23,23,47,158,158,0.09,1.5,0.31,1.08,5,2013-04-05,Sword
+Kuva Shildeg,Normal Attack,75.8,100.5,28.7,205,328,0.31,2.7,0.27,0.917,13,2019-10-31,Hammer
+Magistar,Normal Attack,168,31.5,10.5,210,210,0.2,2,0.1,0.833,1,2013-12-19,Hammer
+Machete,Normal Attack,18,18,84,120,120,0.1,1.5,0.15,0.917,1,2013-05-23,Machete
+Secura Lecta,Normal Attack,0,30,66,176,176,0.15,1.5,0.3,1.25,8,2016-09-15,Whip
+Kronen,Normal Attack,13,13,104,130,130,0.1,1.5,0.2,1.08,3,2014-08-28,Tonfa
+Korumm,Normal Attack,52,104,104,260,260,0.24,2.2,0.3,1,13,2021-12-15,Polearm
+Keratinos,Normal Attack,79,45,87,244,244,0.13,2.1,0.29,0.917,9,2020-08-25,Claws
+Falcor,Normal Attack,36,18,92,230,230,0.12,1.6,0.34,0.833,8,2018-10-12,Glaive
+Falcor,Throw,20,40,80,250,250,0.14,1.8,0.36,0.833,8,2018-10-12,Glaive
+Falcor,Throw Bounce Explosion,0,0,0,345,345,0.14,1.8,0.36,0.833,8,2018-10-12,Glaive
+Falcor,Throw Recall Explosion,0,0,0,690,690,0.14,1.8,0.36,0.833,8,2018-10-12,Glaive
+Falcor,Charged Throw,56,20,230,506,506,0.16,2,0.38,0.833,8,2018-10-12,Glaive
+Falcor,Charged Throw Bounce Explosion,0,0,0,690,690,0.16,2,0.38,0.833,8,2018-10-12,Glaive
+Falcor,Charged Throw Recall Explosion,0,0,0,1380,1380,0.16,2,0.38,0.833,8,2018-10-12,Glaive
+Arca Titron,Normal Attack,234,0,126,360,360,0.24,2,0.38,0.733,10,2017-09-09,Hammer
+Iron Staff Prime,Normal Attack,170,0,80,250,250,0.25,2,0.3,1,0,2019-07-06,Exalted Weapon
+Iron Staff,Normal Attack,170,0,80,250,250,0.25,2,0.3,1,0,2018-06-15,Exalted Weapon
+Jat Kusar,Normal Attack,79,13,45,218,218,0.35,2.5,0.19,0.833,11,2017-07-26,Blade and Whip
+Halikar,Normal Attack,14.9,119.2,14.9,149,149,0.17,2,0.29,1.17,7,2014-10-24,Glaive
+Halikar,Throw,16.3,130.4,16.3,163,163,0.19,2.1,0.31,1.17,7,2014-10-24,Glaive
+Halikar,Throw Bounce Explosion,0,0,0,450,450,0.19,2.1,0.31,1.17,7,2014-10-24,Glaive
+Halikar,Throw Recall Explosion,0,0,0,450,450,0.19,2.1,0.31,1.17,7,2014-10-24,Glaive
+Halikar,Charged Throw,32.7,261.6,32.7,327,327,0.21,2.3,0.33,0.833,7,2014-10-24,Glaive
+Halikar,Charged Throw Bounce Explosion,0,0,0,447,447,0.21,2.3,0.33,0.833,7,2014-10-24,Glaive
+Halikar,Charged Throw Recall Explosion,0,0,0,894,894,0.21,2.3,0.33,0.833,7,2014-10-24,Glaive
+Dark Dagger,Normal Attack,0,58,36,154,154,0.08,1.5,0.22,0.917,2,2012-12-18,Dagger
+Cassowar,Normal Attack,41.36,63.92,82.72,188,188,0.06,1.4,0.28,1.17,5,2017-11-23,Polearm
+Guandao,Normal Attack,50.5,10.1,141.4,202,202,0.28,2.2,0.04,0.833,4,2017-07-19,Polearm
+Plasma Sword,Normal Attack,34,12,88,200,200,0.18,2,0.18,0.667,4,2012-12-18,Sword
+Galvacord,Normal Attack,12,38,64,210,210,0.12,1.8,0.3,0.75,6,2018-12-18,Whip
+Galatine,Normal Attack,4.55,4.55,172.9,182,182,0.1,2,0.2,1,3,2013-09-27,Heavy Blade
+Ether Sword,Normal Attack,28.8,28.8,134.4,192,192,0.1,1.5,0.34,1,7,2013-05-23,Sword
+Hate,Normal Attack,34.5,34.5,161,230,230,0.3,2.5,0.2,0.917,8,2013-05-23,Scythe
+Exalted Umbra Blade,Normal Attack,37.5,37.5,175,250,250,0.15,2,0.15,0.833,0,2018-06-15,Exalted Weapon
+Exalted Prime Blade,Normal Attack,37.5,37.5,175,250,250,0.15,2,0.15,0.833,0,2018-06-15,Exalted Weapon
+Cerata,Normal Attack,19,36,52,183,183,0.15,2,0.3,1,7,2015-10-28,Glaive
+Cerata,Throw,33,39,52,201,201,0.19,2.1,0.33,1,7,2015-10-28,Glaive
+Cerata,Throw Bounce Explosion,0,0,0,333,333,0.19,2.1,0.33,1,7,2015-10-28,Glaive
+Cerata,Throw Recall Explosion,0,0,0,666,666,0.19,2.1,0.33,1,7,2015-10-28,Glaive
+Cerata,Charged Throw,46,80,114,402,402,0.21,2.3,0.34,0.833,7,2015-10-28,Glaive
+Cerata,Charged Throw Bounce Explosion,0,0,0,666,666,0.21,2.3,0.34,0.833,7,2015-10-28,Glaive
+Cerata,Charged Throw Recall Explosion,0,0,0,1318,1318,0.21,2.3,0.34,0.833,7,2015-10-28,Glaive
+Dual Heat Swords,Normal Attack,22.05,22.05,102.9,147,147,0.05,1.5,0.2,0.917,3,2013-02-08,Dual Swords
+Dual Ether,Normal Attack,27,27,126,180,180,0.2,2,0.28,1,8,2013-04-12,Dual Swords
+Dual Raza,Normal Attack,11,33,66,110,110,0.25,3,0.1,0.917,6,2015-04-09,Dual Swords
+Broken War,Normal Attack,18.7,18.7,149.6,187,187,0.35,2.2,0.2,1,10,2015-12-03,Sword
+Kronsh,Kronsh Strike (Gilded),163.8,70.2,0,234,234,0.18,2,0.18,0.85,0,2017-10-12,Zaw Machete / Polearm
+Rabvee,Rabvee Strike (Gilded),140.4,11.7,81.9,234,234,0.18,2,0.18,0.85,0,2018-04-20,Zaw Machete / Hammer
+Sepfahn,Sepfahn Strike (Gilded),22.6,56.5,146.9,226,226,0.2,2,0.2,0.92,0,2018-04-20,Zaw Nikana / Staff
+Plague Kripath,Plague Kripath Strike (Gilded),30,70,49,213,213,0.22,2.2,0.18,0.95,0,2017-11-15,Zaw Rapier / Polearm
+Ooltha,Ooltha Strike (Gilded),22.4,89.6,112,224,224,0.18,2,0.18,0.92,0,2017-10-12,Zaw Sword / Staff
+Plague Keewar,Plague Keewar Strike (Gilded),88,57,91,306,306,0.18,2,0.22,0.88,0,2017-11-15,Zaw Scythe / Staff
+Mewan,Mewan Strike (Gilded),56,78.4,89.6,224,224,0.18,2,0.18,0.85,0,2017-10-12,Zaw Sword / Polearm
+Dehtat,Dehtat Strike (Gilded),22.4,112,89.6,224,224,0.18,2,0.18,0.92,0,2017-10-12,Zaw Rapier / Polearm
+Cyath,Cyath Strike (Gilded),46,11.5,172.5,230,230,0.18,2,0.18,0.92,0,2017-10-12,Zaw Machete / Polearm
+Balla,Balla Strike (Gilded),11.2,134.4,78.4,224,224,0.18,2,0.18,1,0,2017-10-12,Zaw Dagger / Staff
+Dokrahm,Dokrahm Strike (Gilded),46.4,108.1,154.5,309,309,0.18,2,0.18,1,0,2018-04-20,Zaw Scythe / Heavy Blade
