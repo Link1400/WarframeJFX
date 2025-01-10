@@ -1,13 +1,13 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/home/ryan/java/jfx/lib/javafx-swt.jar",
-        "/home/ryan/java/jfx/lib/javafx.base.jar",
-        "/home/ryan/java/jfx/lib/javafx.controls.jar",
-        "/home/ryan/java/jfx/lib/javafx.fxml.jar",
-        "/home/ryan/java/jfx/lib/javafx.graphics.jar",
-        "/home/ryan/java/jfx/lib/javafx.media.jar",
-        "/home/ryan/java/jfx/lib/javafx.swing.jar",
-        "/home/ryan/java/jfx/lib/javafx.web.jar"
+        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.base.jar",
+        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.controls.jar",
+        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.fxml.jar",
+        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.graphics.jar",
+        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.media.jar",
+        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.swing.jar",
+        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.web.jar",
+        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx-swt.jar"
     ]
 }
