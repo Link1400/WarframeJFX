@@ -76,6 +76,22 @@ public class MeleeWeapon {
         return weaponClass;
     }
     public String toString() {
-        return name + " " + attackName + " " + impact + " " + puncture + " " + slash + " " + baseDamage + " " + totalDamage + " " + critChance + " " + critMultiplier + " " + statusChance + " " + speed + " " + mastery + " " + introducedDate + " " + weaponClass;
+        return "MeleeWeapon{" +
+                "name='" + name + '\'' +
+                ", attackName='" + attackName + '\'' +
+                ", impact=" + impact +
+                ", puncture=" + puncture +
+                ", slash=" + slash +
+                ", baseDamage=" + baseDamage +
+                ", totalDamage=" + totalDamage +
+                ", critChance=" + critChance +
+                ", critMultiplier=" + critMultiplier +
+                ", statusChance=" + statusChance +
+                ", speed=" + speed +
+                ", mastery=" + mastery +
+                ", introducedDate='" + introducedDate + '\'' +
+                ", weaponClass='" + weaponClass + '\'' +
+                '}';
     }
 }
+
