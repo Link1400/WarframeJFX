@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 public class Fileimport {
 
     private static FileChooser fileChooser;
+    
 
     public Fileimport() {
         fileChooser = new FileChooser();
@@ -69,4 +70,22 @@ public class Fileimport {
         }
         return weapons;
     }
+/*
+    public List<MeleeWeapon> loadDefaultCSV(){
+        if(!defaultFile.exists()){
+            System.out.println("Default file not found, skipping");
+            return new ArrayList<>();
+
+        }
+
+        try {
+            return readCSV(defaultFile);
+        } catch (IOException e) {
+            System.out.println("Default file read error, skipping");
+            return new ArrayList<>();
+
+        }
+    }
+        Deprecated
+  */
 }
