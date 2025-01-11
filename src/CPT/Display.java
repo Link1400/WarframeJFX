@@ -4,17 +4,23 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Display extends Application {
     private TableView<MeleeWeapon> tableView;
+    private ArrayList<MeleeWeapon> originalWeapons; // Store the full list for reset functionality
+    
     private File defaultFile = new File("src/CPT/CSV File/melee.csv");
     public static void main(String[] args) {
         launch(args);
@@ -27,6 +33,7 @@ public class Display extends Application {
         JFXTable.setupTableColumns(tableView);
         Fileimport defaultFileimport = new Fileimport();
         List<MeleeWeapon> defaultweapons = defaultFileimport.readCSV(defaultFile);
+        originalWeapons = new ArrayList<>(defaultweapons);
         for (MeleeWeapon weapon : defaultweapons) {
                         
             tableView.refresh();
@@ -35,6 +42,10 @@ public class Display extends Application {
             tableView.refresh(); // Ensure the TableView updates
         }
         Button importCSV = new Button("Import Melee Weapon Data");
+        TextField searchbox = new TextField();
+        searchbox.setPromptText("Search...");
+        Button searchConfirm = new Button("Search");
+        Button resetChart = new Button("Reset");
          
         
        
@@ -52,8 +63,8 @@ public class Display extends Application {
                         
                         tableView.refresh();
                         System.out.println(weapon);
-                        tableView.getItems().setAll(weapons); // Populate the TableView
-                        tableView.refresh(); // Ensure the TableView updates
+                        tableView.getItems().setAll(weapons); 
+                        tableView.refresh(); 
                     }
                 } catch (IOException ex) {
                     System.err.println("Error reading file: " + ex.getMessage());
@@ -61,8 +72,28 @@ public class Display extends Application {
             }
         });
 
+        searchConfirm.setOnAction(e -> {
+            String searchTermoriginal = searchbox.getText();
+            String searchTermLower = searchTermoriginal.toLowerCase();
+            System.out.println(searchTermLower);
+            if (!searchTermLower.isEmpty()){
+                weaponSearch searcher = new weaponSearch(searchTermLower, originalWeapons);
+                ArrayList<MeleeWeapon> filteredWeapons = searcher.searchArray(); // Call performSearch()
+                tableView.getItems().setAll(filteredWeapons); // Update the TableView
+            }
+            }
+            
+            
+            );
+
+            resetChart.setOnAction(e -> {
+                tableView.getItems().setAll(originalWeapons); // Reset to original list
+            });
+
         
-        VBox layout = new VBox(20, tableView, importCSV);
+        VBox layout = new VBox(20, tableView, new HBox(5, searchbox, searchConfirm, resetChart), importCSV);
+        VBox.setVgrow(tableView, Priority.ALWAYS);
+        
         Scene scene = new Scene(layout, 800, 600);
         stage.setScene(scene);
         stage.setTitle("Warframe Melee Weapon Data Viewer");
