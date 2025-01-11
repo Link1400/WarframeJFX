@@ -4,41 +4,39 @@ import java.util.ArrayList;
 public class weaponSearch {
 
     private String search;
-    private String[] array;
+    private ArrayList<MeleeWeapon> originallist;
 
-    public weaponSearch(String search, String[] array) {
+    public weaponSearch(String search, ArrayList<MeleeWeapon> originallist) {
         this.search = search;
-        this.array = array;
+        this.originallist = originallist;
     }
 
-    public ArrayList<String> searchArray(String search, String[] list) {
-        ArrayList<String> foundSearch = new ArrayList<>();
-        for (String value : list) {
-            if (value.startsWith(search)) {
-                foundSearch.add(value);
-            }
+    public ArrayList<MeleeWeapon> searchArray() {
+        ArrayList<MeleeWeapon> foundSearch = new ArrayList<>();
+        for (MeleeWeapon weapon : originallist) {
+            if (weapon.getName().toLowerCase().startsWith(search)) {
+                foundSearch.add(weapon);
         }
-        return foundSearch;
+     
     }
+    return foundSearch;
+}
 
     public void setSearch(String newSearch) {
-        search = newSearch;
+        search = newSearch.toLowerCase();
     }
 
     public String getSearch() {
         return search;
     }
 
-    public void setArray(String[] newArray) {
-        array = newArray;
+    public void setArray(ArrayList<MeleeWeapon> newList) {
+        originallist = newList;
     }
     
-    public String[] getArray() {
-        return array;
+    public ArrayList<MeleeWeapon> getArray() {
+        return originallist;
     }
 
-    public ArrayList<String> search() {
-        return searchArray(search, array);
-    }
-
+    
 }
