@@ -40,7 +40,7 @@ public class Display extends Application {
         tableView = new TableView<>();
         JFXTable.setupTableColumns(tableView);
         Fileimport defaultFileimport = new Fileimport();
-        List<MeleeWeapon> defaultweapons = defaultFileimport.readCSV(defaultFile);
+        ArrayList<MeleeWeapon> defaultweapons = defaultFileimport.readCSV(defaultFile);
         originalWeapons = new ArrayList<>(defaultweapons);
         for (MeleeWeapon weapon : defaultweapons) {
                         
