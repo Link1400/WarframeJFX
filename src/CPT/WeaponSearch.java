@@ -1,12 +1,12 @@
 package CPT;
 import java.util.ArrayList;
 
-public class weaponSearch {
+public class WeaponSearch {
 
     private String search;
     private ArrayList<MeleeWeapon> originallist;
 
-    public weaponSearch(String search, ArrayList<MeleeWeapon> originallist) {
+    public WeaponSearch(String search, ArrayList<MeleeWeapon> originallist) {
         this.search = search;
         this.originallist = originallist;
     }
