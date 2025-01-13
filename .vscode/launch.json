@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "CPT.test",
+            "projectName": "4-0-data-visualization-ryan-fellin-and-rami-kabak_ee2f3426"
+        },
+        {
+            "type": "java",
+            "name": "Display",
+            "request": "launch",
+            "mainClass": "CPT.Display",
+            "projectName": "4-0-data-visualization-ryan-fellin-and-rami-kabak_ee2f3426"
+        },
+        {
+            "type": "java",
             "name": "Lesson01",
             "request": "launch",
             "mainClass": "basic.Lesson01",

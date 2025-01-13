@@ -77,7 +77,7 @@ public class Display extends Application {
             String searchTermLower = searchTermoriginal.toLowerCase();
             System.out.println(searchTermLower);
             if (!searchTermLower.isEmpty()){
-                weaponSearch searcher = new weaponSearch(searchTermLower, originalWeapons);
+                WeaponSearch searcher = new WeaponSearch(searchTermLower, originalWeapons);
                 ArrayList<MeleeWeapon> filteredWeapons = searcher.searchArray(); // Call performSearch()
                 tableView.getItems().setAll(filteredWeapons); // Update the TableView
             }
