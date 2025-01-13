@@ -9,13 +9,14 @@ public class test {
         Fileimport defaultFileimport = new Fileimport();
         File defaultFile = new File("src/CPT/CSV File/melee.csv");
         ArrayList<MeleeWeapon> defaultweapons = (ArrayList<MeleeWeapon>) defaultFileimport.readCSV(defaultFile);
-        insertionSort(defaultweapons);
-        for (MeleeWeapon yo : defaultweapons) {
+        weaponSort gay = new weaponSort(defaultweapons);
+        ArrayList<MeleeWeapon> gayweapons = gay.insertionSort(defaultweapons, "Base Damage");
+        for (MeleeWeapon yo : gayweapons) {
             System.out.println(yo.getBaseDamage());
         }
     }
 
-    public static void insertionSort(ArrayList<MeleeWeapon> array) {
+    /**public static void insertionSort(ArrayList<MeleeWeapon> array) {
         for (int i = 1; i < array.size(); i++) {
             MeleeWeapon weapon = array.get(i);
             Double dmg = weapon.getBaseDamage();
@@ -27,5 +28,5 @@ public class test {
             }
             array.set(selectedDmg + 1, weapon);
         }
-    }
+    }*/
 }
