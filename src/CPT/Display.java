@@ -55,6 +55,10 @@ public class Display extends Application {
         ComboBox<String> searchSelector = new ComboBox<>();
         searchSelector.getItems().addAll("Name", "Weapon Class");
         searchSelector.setValue("Name");
+
+        ComboBox<String> sortSelector = new ComboBox<>();
+        sortSelector.getItems().addAll("Impact", "Puncture", "Slash", "Base Damage", "Total Damage", "Critical Hit Chance", "Critical Hit Multiplier", "Status Effect Chance", "Attack Speed");
+        Button sortConfirm = new Button("Sort");
         Button searchConfirm = new Button("Search");
         Button resetChart = new Button("Reset");
          
@@ -103,8 +107,10 @@ public class Display extends Application {
             });
 
         
+
+        HBox sortControls = new HBox(10, sortSelector, sortConfirm);
         HBox searchControls = new HBox(10, searchSelector, searchbox, searchConfirm, resetChart);
-        VBox layout = new VBox(20, tableView,  searchControls, importCSV);
+        VBox layout = new VBox(20, sortControls, tableView,  searchControls, importCSV);
         VBox.setVgrow(tableView, Priority.ALWAYS);
         
         Scene scene = new Scene(layout, 800, 600);
