@@ -3,6 +3,8 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -29,6 +31,11 @@ public class Display extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        TabPane tabpane = new TabPane();
+        
+        Tab dataViewerTab = new Tab("Data Viewer");
+        dataViewerTab.setClosable(false);
+        
         // UI setup
         tableView = new TableView<>();
         JFXTable.setupTableColumns(tableView);
