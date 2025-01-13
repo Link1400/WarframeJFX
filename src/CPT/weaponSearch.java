@@ -18,7 +18,6 @@ public class weaponSearch {
             if (fieldValue != null && substrSearch(fieldValue.toLowerCase(), search.toLowerCase())) {
                 foundSearch.add(weapon);
         }
-     
     }
     return foundSearch;
 }
