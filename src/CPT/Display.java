@@ -2,6 +2,7 @@ package CPT;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -44,6 +45,9 @@ public class Display extends Application {
         Button importCSV = new Button("Import Melee Weapon Data");
         TextField searchbox = new TextField();
         searchbox.setPromptText("Search...");
+        ComboBox<String> searchSelector = new ComboBox<>();
+        searchSelector.getItems().addAll("Name", "Weapon Class");
+        searchSelector.setValue("Name");
         Button searchConfirm = new Button("Search");
         Button resetChart = new Button("Reset");
          
@@ -74,11 +78,12 @@ public class Display extends Application {
 
         searchConfirm.setOnAction(e -> {
             String searchTermoriginal = searchbox.getText();
+            String selectedField = searchSelector.getValue();
             String searchTermLower = searchTermoriginal.toLowerCase();
             System.out.println(searchTermLower);
             if (!searchTermLower.isEmpty()){
                 weaponSearch searcher = new weaponSearch(searchTermLower, originalWeapons);
-                ArrayList<MeleeWeapon> filteredWeapons = searcher.searchArray(); // Call performSearch()
+                ArrayList<MeleeWeapon> filteredWeapons = searcher.searchArray(selectedField); // Call performSearch()
                 tableView.getItems().setAll(filteredWeapons); // Update the TableView
             }
             }
@@ -91,7 +96,8 @@ public class Display extends Application {
             });
 
         
-        VBox layout = new VBox(20, tableView, new HBox(5, searchbox, searchConfirm, resetChart), importCSV);
+        HBox searchControls = new HBox(10, searchSelector, searchbox, searchConfirm, resetChart);
+        VBox layout = new VBox(20, tableView,  searchControls, importCSV);
         VBox.setVgrow(tableView, Priority.ALWAYS);
         
         Scene scene = new Scene(layout, 800, 600);
