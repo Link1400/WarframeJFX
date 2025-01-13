@@ -11,15 +11,17 @@ public class WeaponSearch {
         this.originallist = originallist;
     }
 
-    public ArrayList<MeleeWeapon> searchArray() {
+    public ArrayList<MeleeWeapon> searchArray(String field) {
         ArrayList<MeleeWeapon> foundSearch = new ArrayList<>();
         for (MeleeWeapon weapon : originallist) {
-            if (weapon.getName().toLowerCase().startsWith(search)) {
+            String fieldValue = getFieldValue(weapon, field);
+            if (fieldValue != null && fieldValue.toLowerCase().contains(search.toLowerCase())) {
                 foundSearch.add(weapon);
         }
     }
     return foundSearch;
 }
+
 
     public void setSearch(String newSearch) {
         search = newSearch.toLowerCase();
@@ -35,6 +37,17 @@ public class WeaponSearch {
     
     public ArrayList<MeleeWeapon> getArray() {
         return originallist;
+    }
+
+    private String getFieldValue(MeleeWeapon weapon, String field){
+        switch (field) {
+            case "Name":
+                return weapon.getName();
+            case "Weapon Class":
+                return weapon.getWeaponClass();
+            default:
+                return null;
+        }
     }
 
     
