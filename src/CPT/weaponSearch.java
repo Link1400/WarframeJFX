@@ -11,16 +11,42 @@ public class weaponSearch {
         this.originallist = originallist;
     }
 
-    public ArrayList<MeleeWeapon> searchArray() {
+    public ArrayList<MeleeWeapon> searchArray(String field) {
         ArrayList<MeleeWeapon> foundSearch = new ArrayList<>();
         for (MeleeWeapon weapon : originallist) {
-            if (weapon.getName().toLowerCase().startsWith(search)) {
+            String fieldValue = getFieldValue(weapon, field);
+            if (fieldValue != null && substrSearch(fieldValue.toLowerCase(), search.toLowerCase())) {
                 foundSearch.add(weapon);
         }
      
     }
     return foundSearch;
 }
+
+private boolean substrSearch(String fieldValue, String stringIN ){
+        int fieldValueLength = fieldValue.length();
+        int stringINLength = stringIN.length();
+        {
+            if(stringINLength == 0){
+                return true;
+            }
+
+            for(int arrayListiterate = 0; arrayListiterate <= fieldValueLength - stringINLength; arrayListiterate++ ){
+                boolean match = true;
+                for(int chariterate = 0; chariterate < stringINLength; chariterate++){
+                    if(fieldValue.charAt(arrayListiterate+chariterate) != stringIN.charAt(chariterate)){
+                        match = false;
+                        break;
+                    }
+                }
+                if(match){
+                    return true;
+                }
+            }
+        return false;
+        }
+}
+
 
     public void setSearch(String newSearch) {
         search = newSearch.toLowerCase();
@@ -36,6 +62,17 @@ public class weaponSearch {
     
     public ArrayList<MeleeWeapon> getArray() {
         return originallist;
+    }
+
+    private String getFieldValue(MeleeWeapon weapon, String field){
+        switch (field) {
+            case "Name":
+                return weapon.getName();
+            case "Weapon Class":
+                return weapon.getWeaponClass();
+            default:
+                return null;
+        }
     }
 
     
