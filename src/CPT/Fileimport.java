@@ -26,8 +26,8 @@ public class Fileimport {
         return fileChooser.showOpenDialog(stage);
     }
 
-    public List<MeleeWeapon> readCSV(File file) throws IOException {
-        List<MeleeWeapon> weapons = new ArrayList<>();
+    public ArrayList<MeleeWeapon> readCSV(File file) throws IOException {
+        ArrayList<MeleeWeapon> weapons = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             boolean isFirstLine = true;
