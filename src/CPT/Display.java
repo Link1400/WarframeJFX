@@ -1,8 +1,10 @@
 package CPT;
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
@@ -12,6 +14,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -33,8 +36,7 @@ public class Display extends Application {
     public void start(Stage stage) throws IOException {
         TabPane tabpane = new TabPane();
         
-        Tab dataViewerTab = new Tab("Data Viewer");
-        dataViewerTab.setClosable(false);
+       
         
         // UI setup
         tableView = new TableView<>();
@@ -61,6 +63,7 @@ public class Display extends Application {
         Button sortConfirm = new Button("Sort");
         Button searchConfirm = new Button("Search");
         Button resetChart = new Button("Reset");
+
          
         
        
@@ -120,14 +123,41 @@ public class Display extends Application {
                  
     });
 
-        
+        Label searchLabel = new Label("Search Data");
+        Label sortLabel = new Label("Sort Data");
 
-        HBox sortControls = new HBox(10, sortSelector, sortConfirm);
-        HBox searchControls = new HBox(10, searchSelector, searchbox, searchConfirm, resetChart);
-        VBox layout = new VBox(20, sortControls, tableView,  searchControls, importCSV);
+        HBox sortControls = new HBox(10, sortLabel, sortSelector, sortConfirm);
+        HBox searchControls = new HBox(10, searchLabel, searchSelector, searchbox, searchConfirm, resetChart);
+        HBox controlStrip = new HBox(10, sortControls, searchControls);
+        controlStrip.setAlignment(Pos.CENTER);
+        VBox layout = new VBox(20,  tableView,  controlStrip);
+        layout.setAlignment(Pos.CENTER);
         VBox.setVgrow(tableView, Priority.ALWAYS);
+        Label importInfo = new Label("Click this button to open the OS file picker");        
+        Label importInfosub = new Label("The file must contain the same fields as the original to be valid");
+        VBox importer = new VBox(10, importInfo, importInfosub, importCSV);
+        importer.setAlignment(Pos.CENTER);
+        Label welcome = new Label("Welcome to the Warframe Melee Weapon Data Viewer!");
+        welcome.setFont(new Font("Arial Black", 25));
+        Label welcome2 = new Label("This program will visualize the many statistics of Melee Weapons in Warframe in a clear and readable manner");
+        welcome2.setFont(new Font("Arial", 15));
+        Label welcome3 = new Label("Click a tab above to see the contents within");
+        welcome3.setFont(new Font("Arial", 15));
+
+        VBox Welcome = new VBox(10, welcome, welcome2, welcome3);
+        Welcome.setAlignment(Pos.CENTER);
         
-        Scene scene = new Scene(layout, 800, 600);
+        VBox Linechart = new VBox(10);
+
+        Tab dataViewerTab = new Tab("Data Viewer", layout);
+        dataViewerTab.setClosable(false);
+        Tab dataImporter = new Tab("Change CSV", importer );
+        dataImporter.setClosable(false);
+        Tab WelcomeScreen = new Tab("Welcome", Welcome);
+        WelcomeScreen.setClosable(false);
+        tabpane.getTabs().addAll(WelcomeScreen, dataViewerTab, dataImporter);
+        
+        Scene scene = new Scene(tabpane, 1200, 600);
         stage.setScene(scene);
         stage.setTitle("Warframe Melee Weapon Data Viewer");
         stage.show();
