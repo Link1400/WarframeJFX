@@ -15,7 +15,7 @@ public class weaponSort {
             Double property = getFieldValueSort(weapon, field);
             int selectedProperty = i - 1;
             
-            while (selectedProperty >= 0 && getFieldValueSort(weapon, field) > property) {
+            while (selectedProperty >= 0 && getFieldValueSort(array.get(selectedProperty), field) > property) {
                 array.set(selectedProperty + 1, array.get(selectedProperty));
                 selectedProperty--;
             }
