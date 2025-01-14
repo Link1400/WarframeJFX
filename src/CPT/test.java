@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+@Deprecated 
+
 public class test {
     public static void main(String[] args) throws IOException {
         Fileimport defaultFileimport = new Fileimport();
@@ -16,7 +18,8 @@ public class test {
         }
     }
 
-    /**public static void insertionSort(ArrayList<MeleeWeapon> array) {
+    /* DEPRECATED TEST METHOD
+    public static void insertionSort(ArrayList<MeleeWeapon> array) {
         for (int i = 1; i < array.size(); i++) {
             MeleeWeapon weapon = array.get(i);
             Double dmg = weapon.getBaseDamage();

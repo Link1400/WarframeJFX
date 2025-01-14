@@ -94,8 +94,8 @@ public class Display extends Application {
             System.out.println(searchTermLower);
             if (!searchTermLower.isEmpty()){
                 weaponSearch searcher = new weaponSearch(searchTermLower, originalWeapons);
-                ArrayList<MeleeWeapon> filteredWeapons = searcher.searchArray(selectedField); // Call performSearch()
-                tableView.getItems().setAll(filteredWeapons); // Update the TableView
+                ArrayList<MeleeWeapon> filteredWeapons = searcher.searchArray(selectedField); 
+                tableView.getItems().setAll(filteredWeapons); 
             }
             }
             
@@ -105,6 +105,20 @@ public class Display extends Application {
             resetChart.setOnAction(e -> {
                 tableView.getItems().setAll(originalWeapons); // Reset to original list
             });
+
+        sortConfirm.setOnAction(e -> {
+            System.out.println(sortSelector.getValue());
+            weaponSort sort = new weaponSort(defaultweapons);
+            String selectedSortField = sortSelector.getValue();
+            ArrayList<MeleeWeapon> sortedWeapons = defaultweapons;
+                for (MeleeWeapon weapon : sortedWeapons) {
+                    sortedWeapons = sort.insertionSort(defaultweapons, selectedSortField);
+                    
+            
+                 }
+                 tableView.getItems().setAll(sortedWeapons);
+                 
+    });
 
         
 
