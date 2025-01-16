@@ -2,7 +2,10 @@ package CPT;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.PieChart;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -70,6 +73,23 @@ public class Display extends Application {
         Button sortConfirm = new Button("Sort");
         Button searchConfirm = new Button("Search");
         Button resetChart = new Button("Reset");
+        weaponSort sortbydmg = new weaponSort(defaultweapons);
+        ArrayList<MeleeWeapon> speedvdmg = sortbydmg.insertionSort(defaultweapons, "Base Damage");
+        NumberAxis XAxis = new NumberAxis();
+        NumberAxis YAxis = new NumberAxis();
+        XAxis.setLabel("Attack Damage");
+        YAxis.setLabel("Attack Speed");
+        LineChart<Number, Number> lineChart = new LineChart<>(XAxis, YAxis);
+        lineChart.setTitle("Attack Speed vs Base Damage");
+        XYChart.Series<Number, Number> Data = new XYChart.Series<>();
+        
+        for(MeleeWeapon weapon : speedvdmg){
+            double speedIN = weapon.getSpeed();
+            double basedmgIN = weapon.getBaseDamage();
+            Data.getData().add(new XYChart.Data<>(basedmgIN, speedIN));
+
+        }
+        lineChart.getData().addAll(Data);
         
 
         
@@ -155,7 +175,7 @@ public class Display extends Application {
         VBox Welcome = new VBox(10, welcome, welcome2, welcome3);
         Welcome.setAlignment(Pos.CENTER);
         
-        VBox Linechart = new VBox(10);
+        VBox Linechartview = new VBox(10, lineChart);
 
         VBox Piechartview = new VBox(10, weaponclasspieChart);
 
@@ -167,8 +187,10 @@ public class Display extends Application {
         WelcomeScreen.setClosable(false);
         Tab PieChartViewTab = new Tab("Pie Chart", Piechartview);
         PieChartViewTab.setClosable(false);
+        Tab LineChartViewTab = new Tab("Line Chart", Linechartview);
+        LineChartViewTab.setClosable(false);
 
-        tabpane.getTabs().addAll(WelcomeScreen, dataViewerTab, PieChartViewTab, dataImporter);
+        tabpane.getTabs().addAll(WelcomeScreen, dataViewerTab, PieChartViewTab, LineChartViewTab, dataImporter);
         
         Scene scene = new Scene(tabpane, 1200, 600);
         stage.setScene(scene);
