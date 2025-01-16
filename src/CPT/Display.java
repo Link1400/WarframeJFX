@@ -2,6 +2,7 @@ package CPT;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -25,7 +26,9 @@ import java.util.List;
 
 public class Display extends Application {
     private TableView<MeleeWeapon> tableView;
-    private ArrayList<MeleeWeapon> originalWeapons; // Store the full list for reset functionality
+    private ArrayList<MeleeWeapon> originalWeapons; 
+   
+    
     
     private File defaultFile = new File("src/CPT/CSV File/melee.csv");
     public static void main(String[] args) {
@@ -57,14 +60,19 @@ public class Display extends Application {
         ComboBox<String> searchSelector = new ComboBox<>();
         searchSelector.getItems().addAll("Name", "Weapon Class");
         searchSelector.setValue("Name");
+        weaponSort sortbyClass = new weaponSort(defaultweapons);
+        ArrayList<MeleeWeapon> weaponsbyClass = sortbyClass.insertionSortbyClass(defaultweapons);
+        PieChart weaponclasspieChart = sortbyClass.countinstanceofClass(weaponsbyClass);
+
 
         ComboBox<String> sortSelector = new ComboBox<>();
         sortSelector.getItems().addAll("Impact", "Puncture", "Slash", "Base Damage", "Total Damage", "Critical Hit Chance", "Critical Hit Multiplier", "Status Effect Chance", "Attack Speed");
         Button sortConfirm = new Button("Sort");
         Button searchConfirm = new Button("Search");
         Button resetChart = new Button("Reset");
+        
 
-         
+        
         
        
        
@@ -106,7 +114,7 @@ public class Display extends Application {
             );
 
             resetChart.setOnAction(e -> {
-                tableView.getItems().setAll(originalWeapons); // Reset to original list
+                tableView.getItems().setAll(originalWeapons); 
             });
 
         sortConfirm.setOnAction(e -> {
@@ -149,13 +157,18 @@ public class Display extends Application {
         
         VBox Linechart = new VBox(10);
 
+        VBox Piechartview = new VBox(10, weaponclasspieChart);
+
         Tab dataViewerTab = new Tab("Data Viewer", layout);
         dataViewerTab.setClosable(false);
         Tab dataImporter = new Tab("Change CSV", importer );
         dataImporter.setClosable(false);
         Tab WelcomeScreen = new Tab("Welcome", Welcome);
         WelcomeScreen.setClosable(false);
-        tabpane.getTabs().addAll(WelcomeScreen, dataViewerTab, dataImporter);
+        Tab PieChartViewTab = new Tab("Pie Chart", Piechartview);
+        PieChartViewTab.setClosable(false);
+
+        tabpane.getTabs().addAll(WelcomeScreen, dataViewerTab, PieChartViewTab, dataImporter);
         
         Scene scene = new Scene(tabpane, 1200, 600);
         stage.setScene(scene);
