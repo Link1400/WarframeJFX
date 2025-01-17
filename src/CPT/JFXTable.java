@@ -6,8 +6,14 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 public class JFXTable {
 
+    /**
+     * Method which takes a tableview as a parameter and creates tablecolumns for the names of the stats of the weapons
+     * 
+     * @param tableView the tableview which all of the columns will be added to
+     */
     public static void setupTableColumns(TableView<MeleeWeapon> tableView) {
-        
+
+        // Initialize the variables for the columns
         TableColumn<MeleeWeapon, String> nameCol = new TableColumn<>("Name");
         nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
 
@@ -52,7 +58,7 @@ public class JFXTable {
 
         // Add all columns to the TableView
         tableView.getColumns().addAll(nameCol, attackNameCol, impactCol, punctureCol, slashCol,
-                                      baseDamageCol, totalDamageCol, critChanceCol, critMultiplierCol,
-                                      statusChanceCol, speedCol, masteryCol, introducedDateCol, classCol);
+                baseDamageCol, totalDamageCol, critChanceCol, critMultiplierCol,
+                statusChanceCol, speedCol, masteryCol, introducedDateCol, classCol);
     }
 }
