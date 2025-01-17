@@ -1,0 +1,153 @@
+---
+title: ICS4U1 Computer Science CPT
+---
+classDiagram
+class Display
+Display : -TableView<MeleeWeapon> TableView
+
+class MeleeWeapon
+MeleeWeapon : -String name
+MeleeWeapon : -String attackName
+MeleeWeapon : -double impact
+MeleeWeapon : -double puncture
+MeleeWeapon : -double slash
+MeleeWeapon : -double baseDamage
+MeleeWeapon : -double totalDamage
+MeleeWeapon : -double critChance
+MeleeWeapon : -double critMultiplier
+MeleeWeapon : -double statusChance
+MeleeWeapon : -double speed
+MeleeWeapon : -int mastery
+MeleeWeapon : -String introducedDate
+MeleeWeapon : -String weaponClass
+MeleeWeapon : +getName() String
+MeleeWeapon : +getAttackName() String
+MeleeWeapon : +getImpact() double
+MeleeWeapon : +getPuncture() double
+MeleeWeapon : +getSlash() double
+MeleeWeapon : +getBaseDamage() double
+MeleeWeapon : +getTotalDamage() double
+MeleeWeapon : +getCritChance() double
+MeleeWeapon : +getCritMultiplier() double
+MeleeWeapon : +getStatusChance() double
+MeleeWeapon : +getSpeed() double
+MeleeWeapon : +getMastery() int
+MeleeWeapon : +getIntroducedDate() String
+MeleeWeapon : +getWeaponClass() String
+MeleeWeapon : +toString() String
+
+
+MeleeWeapon --|> Display : Has
+MeleeWeapon --|> weaponSort : Has
+MeleeWeapon --|> weaponSearch: Has
+MeleeWeapon --|> JFXTable : Has
+MeleeWeapon --|> Fileimport : Has
+weaponSort --|> Display : Has
+weaponSearch --|> Display : Has
+JFXTable --|> Display : Has
+Fileimport --|> Display : Has
+
+
+class weaponSort
+weaponSort : -ArrayList<MeleeWeapon> originallist
+weaponSort : MeleeWeapon weapon
+weaponSort : double property
+weaponSort : int selectedProperty
+weaponSort : int AssaultSawCount
+weaponSort : int BladeandWhipCount
+weaponSort : int ClawCount
+weaponSort : int DaggerCount
+weaponSort : int DualDaggerCount
+weaponSort : int DualSwordCount
+weaponSort : int ExaltedCount
+weaponSort : int FistCount
+weaponSort : int GlaiveCount
+weaponSort : int GunBladeCount
+weaponSort : int HammerCount
+weaponSort : int HeavyBladeCount
+weaponSort : int MacheteCount
+weaponSort : int NikanaCount
+weaponSort : int NunchakuCount
+weaponSort : int PolearmCount
+weaponSort : int RapierCount
+weaponSort : int ScytheCount
+weaponSort : int SparringCount
+weaponSort : int StaffCount
+weaponSort : int SwordCount
+weaponSort : int SwordShieldCount
+weaponSort : int TonfaCount
+weaponSort : int twohNikanaCount
+weaponSort : int WarfanCount
+weaponSort : int WhipCount
+weaponSort : int ZawpartCount
+weaponSort : 
+
+
+
+class weaponSearch
+weaponSearch : -String search
+weaponSearch : -ArrayList<MeleeWeapon> originallist
+weaponSearch : ArrayList<MeleeWeapon> foundSearch
+weaponSearch : String fieldValue
+weaponSearch : ArrayList<MeleeWeapon> originallist
+weaponSearch : int fieldValueLength
+weaponSearch : int stringINLength
+weaponSearch : int arrayListiterate
+weaponSearch : boolean match
+weaponSearch : int chariterate
+weaponSearch : +searchArray(String field) ArrayList<MeleeWeapon>
+weaponSearch : +substrSearch(String fieldValue, String stringIN) boolean
+weaponSearch : +setSearch(String newSearch) void
+weaponSearch : +getSearch() String
+weaponSearch : +setArray(ArrayList<MeleeWeapon> newList) void
+weaponSearch : +getArray() ArrayList<MeleeWeapon>
+weaponSearch : +getFieldValue(MeleeWeapon weapon, String field) String
+
+
+
+class JFXTable
+JFXTable : +setupTableColumns(TableView<MeleeWeapon> tableView) void
+JFXTable : TableColumn<MeleeWeapon, String> nameCol
+JFXTable : TableColumn<MeleeWeapon, String> attacknameCol
+JFXTable : TableColumn<MeleeWeapon, Double> impactCol
+JFXTable : TableColumn<MeleeWeapon, Double> punctureCol
+JFXTable : TableColumn<MeleeWeapon, Double> slashCol
+JFXTable : TableColumn<MeleeWeapon, Double> baseDamageCol
+JFXTable : TableColumn<MeleeWeapon, Double> totalDamageCol
+JFXTable : TableColumn<MeleeWeapon, Double> critChanceCol
+JFXTable : TableColumn<MeleeWeapon, Double> critMultiplierCol
+JFXTable : TableColumn<MeleeWeapon, Double> statusChanceCol
+JFXTable : TableColumn<MeleeWeapon, Double> speedCol
+JFXTable : TableColumn<MeleeWeapon, Integer> masteryCol
+JFXTable : TableColumn<MeleeWeapon, String> introducedDateCol
+JFXTable : TableColumn<MeleeWeapon, String> classCol
+
+
+class Fileimport
+Fileimport : -FileChooser fileChooser
+Fileimport : -boolean isFirstLine
+Fileimport : -String name
+Fileimport : -String attackName
+Fileimport : -double impact
+Fileimport : -double puncture
+Fileimport : -double slash
+Fileimport : -double baseDamage
+Fileimport : -double totalDamage
+Fileimport : -double critChance
+Fileimport : -double critMultiplier
+Fileimport : -double statusChance
+Fileimport : -double speed
+Fileimport : -int mastery
+Fileimport : -String introducedDate
+Fileimport : -String weaponClass
+Fileimport : -MeleeWeapon weapon
+Fileimport : -BufferedReader reader
+Fileimport : -String line
+Fileimport : -String[] parts
+Fileimport : -String[] parts
+Fileimport : +chooseFile(Stage stage)  File
+Fileimport : +readCSV(File file)  ArrayList<MeleeWeapon>
+
+
+
+

@@ -94,7 +94,7 @@ public class weaponSort {
         int twohNikanaCount = 0;
         int WarfanCount = 0;
         int WhipCount = 0;
-        int ZawpartCount = 0;
+        int ZawpartsCount = 11;
 
         for (MeleeWeapon weapon : array) {
             if (weapon.getAttackName().equals("Normal Attack")) {
@@ -178,7 +178,7 @@ public class weaponSort {
                         WhipCount++;
                         break;
                     case "Zaw":
-                        ZawpartCount++;
+                        ZawpartsCount++;
                         break;
                     default:
                         break;
@@ -217,7 +217,7 @@ public class weaponSort {
                 System.out.println(twohNikanaCount);
                 System.out.println(WarfanCount);
                 System.out.println(WhipCount);
-                System.out.println(ZawpartCount);
+                System.out.println(ZawpartsCount);
 
                 String[] labels = {
                         "Assault Saw", "Blade and Whip", "Claw", "Dagger", "Dual Dagger", "Dual Sword", "Exalted",
@@ -225,7 +225,7 @@ public class weaponSort {
                         "Gun Blade", "Hammer", "Heavy Blade", "Machete", "Nikana", "Nunchaku", "Polearm", "Rapier",
                         "Scythe",
                         "Sparring", "Staff", "Sword", "Sword & Shield", "Tonfa", "Two-handed Nikana", "Warfan", "Whip",
-                        "Zaw Part"
+                        "Zaw Parts"
                 };
 
                 int[] counts = {
@@ -235,7 +235,7 @@ public class weaponSort {
                         NunchakuCount, PolearmCount,
                         RapierCount, ScytheCount, SparringCount, StaffCount, SwordCount, SwordShieldCount, TonfaCount,
                         twohNikanaCount,
-                        WarfanCount, WhipCount, ZawpartCount
+                        WarfanCount, WhipCount, ZawpartsCount
                 };
                 PieChart pieChart = new PieChart();
                 for (int i = 0; i < labels.length; i++) {
