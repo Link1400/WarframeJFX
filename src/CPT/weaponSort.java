@@ -6,12 +6,27 @@ import javafx.scene.chart.PieChart;
 
 public class weaponSort {
 
+    // Initializing array
     private ArrayList<MeleeWeapon> originallist;
 
+    /**
+     * Constructor for the weaponSort class
+     * 
+     * @param originallist Array used to sort the weapons
+     */
     public weaponSort(ArrayList<MeleeWeapon> originallist) {
         this.originallist = originallist;
     }
 
+    /**
+     * InsertionSort method which uses the getFieldValue sort to return the type of
+     * property that it should sort by
+     * 
+     * @param array the variable used as the arraylist that is sorted
+     * @param field the variable used to call the getFieldValueSort with the
+     *              specified property to return the stat
+     * @return returns the sorted array
+     */
     public ArrayList<MeleeWeapon> insertionSort(ArrayList<MeleeWeapon> array, String field) {
         for (int i = 1; i < array.size(); i++) {
             MeleeWeapon weapon = array.get(i);
@@ -27,6 +42,18 @@ public class weaponSort {
         return array;
     }
 
+    /**
+     * A method which allows you to input an array and a specified string for the
+     * property that you want to return.
+     * It uses the field variable alongside the getter methods in the weapon objects
+     * to retrieve the properties
+     * 
+     * @param weapon The weapon object which contains all the information about a
+     *               weapon (name, stats, etc)
+     * @param field  The variable which contains the stat you want to retrieve of a
+     *               weapon
+     * @return returns the stat itself using the getter methods in the object
+     */
     private Double getFieldValueSort(MeleeWeapon weapon, String field) {
         switch (field) {
             case "Impact":
@@ -52,6 +79,13 @@ public class weaponSort {
         }
     }
 
+    /**
+     * InsertionSort but using string instead of double variables to account for
+     * sorting the string
+     * 
+     * @param array the array of which you want to be sorted
+     * @return returns a new array with the sorted weapon objects
+     */
     public ArrayList<MeleeWeapon> insertionSortbyClass(ArrayList<MeleeWeapon> array) {
         for (int i = 1; i < array.size(); i++) {
             MeleeWeapon weapon = array.get(i);
@@ -67,6 +101,14 @@ public class weaponSort {
         return array;
     }
 
+    /**
+     * A method which is used in generating the pie chart by iterating through an
+     * array and counting instances of each weapon class value
+     * 
+     * @param array the array of which you want to count all the weapon class types
+     *              of each value
+     * @return returns the pie chart itself
+     */
     public PieChart countinstanceofClass(ArrayList<MeleeWeapon> array) {
         int AssaultSawCount = 0;
         int BladeandWhipCount = 0;
@@ -182,7 +224,7 @@ public class weaponSort {
                         break;
                     default:
                         break;
-                
+
                 }
             }
         }
@@ -245,9 +287,26 @@ public class weaponSort {
                     }
                 }
 
-                pieChart.setLegendVisible(false);
-                return pieChart;
+
+        int[] counts = {
+                AssaultSawCount, BladeandWhipCount, ClawCount, DaggerCount, DualDaggerCount, DualSwordCount,
+                ExaltedCount, FistCount,
+                GlaiveCount, GunBladeCount, HammerCount, HeavyBladeCount, MacheteCount, NikanaCount,
+                NunchakuCount, PolearmCount,
+                RapierCount, ScytheCount, SparringCount, StaffCount, SwordCount, SwordShieldCount, TonfaCount,
+                twohNikanaCount,
+                WarfanCount, WhipCount, ZawpartsCount
+        };
+        PieChart pieChart = new PieChart();
+        for (int i = 0; i < labels.length; i++) {
+            if (counts[i] > 0) {
+                PieChart.Data slice = new PieChart.Data(labels[i], counts[i]);
+                pieChart.getData().add(slice);
             }
-            
         }
-    
+
+        pieChart.setLegendVisible(false);
+        return pieChart;
+    }
+
+}
