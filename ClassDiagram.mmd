@@ -50,51 +50,15 @@ Fileimport --|> Display : Has
 
 class weaponSort
 weaponSort : -ArrayList<MeleeWeapon> originallist
-weaponSort : MeleeWeapon weapon
-weaponSort : double property
-weaponSort : int selectedProperty
-weaponSort : int AssaultSawCount
-weaponSort : int BladeandWhipCount
-weaponSort : int ClawCount
-weaponSort : int DaggerCount
-weaponSort : int DualDaggerCount
-weaponSort : int DualSwordCount
-weaponSort : int ExaltedCount
-weaponSort : int FistCount
-weaponSort : int GlaiveCount
-weaponSort : int GunBladeCount
-weaponSort : int HammerCount
-weaponSort : int HeavyBladeCount
-weaponSort : int MacheteCount
-weaponSort : int NikanaCount
-weaponSort : int NunchakuCount
-weaponSort : int PolearmCount
-weaponSort : int RapierCount
-weaponSort : int ScytheCount
-weaponSort : int SparringCount
-weaponSort : int StaffCount
-weaponSort : int SwordCount
-weaponSort : int SwordShieldCount
-weaponSort : int TonfaCount
-weaponSort : int twohNikanaCount
-weaponSort : int WarfanCount
-weaponSort : int WhipCount
-weaponSort : int ZawpartCount
-weaponSort : 
+weaponSort : +insertionSort(ArrayList<MeleeWeapon> array, String field) ArrayList<MeleeWeapon>
+weaponSort : +getFieldValueSort(MeleeWeapon weapon, String field) Double
+ 
 
 
 
 class weaponSearch
 weaponSearch : -String search
 weaponSearch : -ArrayList<MeleeWeapon> originallist
-weaponSearch : ArrayList<MeleeWeapon> foundSearch
-weaponSearch : String fieldValue
-weaponSearch : ArrayList<MeleeWeapon> originallist
-weaponSearch : int fieldValueLength
-weaponSearch : int stringINLength
-weaponSearch : int arrayListiterate
-weaponSearch : boolean match
-weaponSearch : int chariterate
 weaponSearch : +searchArray(String field) ArrayList<MeleeWeapon>
 weaponSearch : +substrSearch(String fieldValue, String stringIN) boolean
 weaponSearch : +setSearch(String newSearch) void
