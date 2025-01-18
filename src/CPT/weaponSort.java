@@ -228,7 +228,7 @@ public class weaponSort {
                 }
             }
         }
-
+        /* for debug
         System.out.println(AssaultSawCount);
         System.out.println(BladeandWhipCount);
         System.out.println(ClawCount);
@@ -260,6 +260,7 @@ public class weaponSort {
         System.out.println(WarfanCount);
         System.out.println(WhipCount);
         System.out.println(ZawpartsCount);
+        */
 
         String[] labels = {
                 "Assault Saw", "Blade and Whip", "Claw", "Dagger", "Dual Dagger", "Dual Sword", "Exalted",

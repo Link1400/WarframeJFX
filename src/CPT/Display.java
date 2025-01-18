@@ -56,7 +56,7 @@ public class Display extends Application {
         // For each loop to refresh the table view and add all the data to the table, then refreshes it again to make sure it updates
         for (MeleeWeapon weapon : defaultweapons) {
             tableView.refresh();
-            System.out.println(weapon);
+            //System.out.println(weapon);
             tableView.getItems().setAll(defaultweapons); 
             tableView.refresh();
         }
@@ -121,7 +121,7 @@ public class Display extends Application {
                 // For each loop to refresh the table view and add all the data to the table, then refreshes it again to make sure it updates
                 for (MeleeWeapon weapon : weapons) {
                         tableView.refresh();
-                        System.out.println(weapon);
+                        //System.out.println(weapon);
                         tableView.getItems().setAll(weapons);
                         tableView.refresh();
                     }
@@ -136,7 +136,7 @@ public class Display extends Application {
             String searchTermoriginal = searchbox.getText();
             String selectedField = searchSelector.getValue();
             String searchTermLower = searchTermoriginal.toLowerCase();
-            System.out.println(searchTermLower);
+            //System.out.println(searchTermLower);
             if (!searchTermLower.isEmpty()) {
                 weaponSearch searcher = new weaponSearch(searchTermLower, originalWeapons);
                 ArrayList<MeleeWeapon> filteredWeapons = searcher.searchArray(selectedField);
@@ -153,7 +153,7 @@ public class Display extends Application {
 
         // Sort button setup to initialize the weaponSort class and uses a for each loop to sort the weapons by the given stat, it then uses setAll on the table view to set the table display as the sorted data
         sortConfirm.setOnAction(e -> {
-            System.out.println(sortSelector.getValue());
+            //System.out.println(sortSelector.getValue());
             weaponSort sort = new weaponSort(defaultweapons);
             String selectedSortField = sortSelector.getValue();
             ArrayList<MeleeWeapon> sortedWeapons = defaultweapons;
