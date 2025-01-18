@@ -1,13 +1,13 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.base.jar",
-        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.controls.jar",
-        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.fxml.jar",
-        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.graphics.jar",
-        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.media.jar",
-        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.swing.jar",
-        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx.web.jar",
-        "/home/ubuntuuser76/Repositories/openjfx-21.0.5_linux-x64_bin-sdk/JFX/lib/javafx-swt.jar"
+        "d:\\JavaFX\\javafx-sdk-17.0.13\\lib\\javafx.base.jar",
+        "d:\\JavaFX\\javafx-sdk-17.0.13\\lib\\javafx.controls.jar",
+        "d:\\JavaFX\\javafx-sdk-17.0.13\\lib\\javafx.fxml.jar",
+        "d:\\JavaFX\\javafx-sdk-17.0.13\\lib\\javafx.graphics.jar",
+        "d:\\JavaFX\\javafx-sdk-17.0.13\\lib\\javafx.media.jar",
+        "d:\\JavaFX\\javafx-sdk-17.0.13\\lib\\javafx.swing.jar",
+        "d:\\JavaFX\\javafx-sdk-17.0.13\\lib\\javafx.web.jar",
+        "d:\\JavaFX\\javafx-sdk-17.0.13\\lib\\javafx-swt.jar"
     ]
 }

@@ -228,65 +228,48 @@ public class weaponSort {
                 }
             }
         }
+        /* for debug
+        System.out.println(AssaultSawCount);
+        System.out.println(BladeandWhipCount);
+        System.out.println(ClawCount);
+        System.out.println(DaggerCount);
+        System.out.println(DualDaggerCount);
+        System.out.println(DualSwordCount);
+        System.out.println(ExaltedCount);
+        System.out.println(FistCount);
+        System.out.println(GlaiveCount);
+        System.out.println(GunBladeCount);
+        System.out.println(HammerCount);
+        System.out.println(HeavyBladeCount);
+        System.out.println(HammerCount);
+        System.out.println(HeavyBladeCount);
+        System.out.println(HammerCount);
+        System.out.println(HeavyBladeCount);
+        System.out.println(MacheteCount);
+        System.out.println(NikanaCount);
+        System.out.println(NunchakuCount);
+        System.out.println(PolearmCount);
+        System.out.println(RapierCount);
+        System.out.println(ScytheCount);
+        System.out.println(SparringCount);
+        System.out.println(StaffCount);
+        System.out.println(SwordCount);
+        System.out.println(SwordShieldCount);
+        System.out.println(TonfaCount);
+        System.out.println(twohNikanaCount);
+        System.out.println(WarfanCount);
+        System.out.println(WhipCount);
+        System.out.println(ZawpartsCount);
+        */
 
-                System.out.println(AssaultSawCount);
-                System.out.println(BladeandWhipCount);
-                System.out.println(ClawCount);
-                System.out.println(DaggerCount);
-                System.out.println(DualDaggerCount);
-                System.out.println(DualSwordCount);
-                System.out.println(ExaltedCount);
-                System.out.println(FistCount);
-                System.out.println(GlaiveCount);
-                System.out.println(GunBladeCount);
-                System.out.println(HammerCount);
-                System.out.println(HeavyBladeCount);
-                System.out.println(HammerCount);
-                System.out.println(HeavyBladeCount);
-                System.out.println(HammerCount);
-                System.out.println(HeavyBladeCount);
-                System.out.println(MacheteCount);
-                System.out.println(NikanaCount);
-                System.out.println(NunchakuCount);
-                System.out.println(PolearmCount);
-                System.out.println(RapierCount);
-                System.out.println(ScytheCount);
-                System.out.println(SparringCount);
-                System.out.println(StaffCount);
-                System.out.println(SwordCount);
-                System.out.println(SwordShieldCount);
-                System.out.println(TonfaCount);
-                System.out.println(twohNikanaCount);
-                System.out.println(WarfanCount);
-                System.out.println(WhipCount);
-                System.out.println(ZawpartsCount);
-
-                String[] labels = {
-                        "Assault Saw", "Blade and Whip", "Claw", "Dagger", "Dual Dagger", "Dual Sword", "Exalted",
-                        "Fist", "Glaive",
-                        "Gun Blade", "Hammer", "Heavy Blade", "Machete", "Nikana", "Nunchaku", "Polearm", "Rapier",
-                        "Scythe",
-                        "Sparring", "Staff", "Sword", "Sword & Shield", "Tonfa", "Two-handed Nikana", "Warfan", "Whip",
-                        "Zaw Parts"
-                };
-
-                int[] counts = {
-                        AssaultSawCount, BladeandWhipCount, ClawCount, DaggerCount, DualDaggerCount, DualSwordCount,
-                        ExaltedCount, FistCount,
-                        GlaiveCount, GunBladeCount, HammerCount, HeavyBladeCount, MacheteCount, NikanaCount,
-                        NunchakuCount, PolearmCount,
-                        RapierCount, ScytheCount, SparringCount, StaffCount, SwordCount, SwordShieldCount, TonfaCount,
-                        twohNikanaCount,
-                        WarfanCount, WhipCount, ZawpartsCount
-                };
-                PieChart pieChart = new PieChart();
-                for (int i = 0; i < labels.length; i++) {
-                    if (counts[i] > 0) {
-                        PieChart.Data slice = new PieChart.Data(labels[i], counts[i]);
-                        pieChart.getData().add(slice);
-                    }
-                }
-
+        String[] labels = {
+                "Assault Saw", "Blade and Whip", "Claw", "Dagger", "Dual Dagger", "Dual Sword", "Exalted",
+                "Fist", "Glaive",
+                "Gun Blade", "Hammer", "Heavy Blade", "Machete", "Nikana", "Nunchaku", "Polearm", "Rapier",
+                "Scythe",
+                "Sparring", "Staff", "Sword", "Sword & Shield", "Tonfa", "Two-handed Nikana", "Warfan", "Whip",
+                "Zaw Parts"
+        };
 
         int[] counts = {
                 AssaultSawCount, BladeandWhipCount, ClawCount, DaggerCount, DualDaggerCount, DualSwordCount,
