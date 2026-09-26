@@ -9,5 +9,15 @@ Edit this page to include:
 * A brief explanation of yoru object-oriented approach, including an electronically-generated UML Class Diagram.
 * Embedded (MP4 or MOV file in `images` folder) or external link (e.g. YouTube) to your demonstration video.
 
-### JavaFX Installation & Configuration
+## JavaFX Installation & Configuration
 The [INSTALL.md](INSTALL.md) in this repository includes instructions on how to set up JavaFX for your development environment.
+
+## Maven build and run
+
+This project uses Maven to download the correct JavaFX libraries for the current operating system. Install a full JDK and Maven, then run:
+
+```bash
+mvn clean javafx:run
+```
+
+The application entry point is `CPT.Display`. The JavaFX jars in `lib/` are no longer required when running through Maven.
