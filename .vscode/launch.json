@@ -6,71 +6,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "test",
-            "request": "launch",
-            "mainClass": "CPT.test",
-            "projectName": "4-0-data-visualization-ryan-fellin-and-rami-kabak_ee2f3426"
-        },
-        {
-            "type": "java",
             "name": "Display",
             "request": "launch",
             "mainClass": "CPT.Display",
-            "projectName": "4-0-data-visualization-ryan-fellin-and-rami-kabak_ee2f3426"
-        },
-        {
-            "type": "java",
-            "name": "Lesson01",
-            "request": "launch",
-            "mainClass": "basic.Lesson01",
-            "projectName": "4-0-data-visualization-ryan-fellin-and-rami-kabak_ee2f3426"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}",
-            "vmArgs": "--module-path ${env:JFX_HOME}/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web"
-        },
-        {
-            "type": "java",
-            "name": "HelloWorld",
-            "request": "launch",
-            "mainClass": "basic.HelloWorld",
-            "projectName": "3-12-sorting-algorithm-charts-in-javafx-RyanF14_14144652",
-            "vmArgs": "--module-path ${env:JFX_HOME}/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web"
-        },
-        {
-            "type": "java",
-            "name": "Lesson01",
-            "request": "launch",
-            "mainClass": "basic.Lesson01",
-            "projectName": "3-12-sorting-algorithm-charts-in-javafx-RyanF14_14144652",
-            "vmArgs": "--module-path ${env:JFX_HOME}/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web"
-        },
-        {
-            "type": "java",
-            "name": "Lesson02",
-            "request": "launch",
-            "mainClass": "basic.Lesson02",
-            "projectName": "3-12-sorting-algorithm-charts-in-javafx-RyanF14_14144652",
-            "vmArgs": "--module-path ${env:JFX_HOME}/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web"
-        },
-        {
-            "type": "java",
-            "name": "Lesson03",
-            "request": "launch",
-            "mainClass": "basic.Lesson03",
-            "projectName": "3-12-sorting-algorithm-charts-in-javafx-RyanF14_14144652",
-            "vmArgs": "--module-path ${env:JFX_HOME}/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web"
-        },
-        {
-            "type": "java",
-            "name": "Lesson04",
-            "request": "launch",
-            "mainClass": "basic.Lesson04",
-            "projectName": "3-12-sorting-algorithm-charts-in-javafx-RyanF14_14144652",
-            "vmArgs": "--module-path ${env:JFX_HOME}/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web"
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "--module-path ${workspaceFolder}/lib --add-modules javafx.controls"
         }
     ]
 }
